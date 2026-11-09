@@ -12,9 +12,10 @@ public class Main {
     public static final String BASE_URI = "http://0.0.0.0:8083/";
 
     public static HttpServer startServer() {
-        // registra todos os controllers do pacote controller
+        // registra controllers e o filtro de autenticacao (AuthFilter)
         final ResourceConfig rc = new ResourceConfig()
-                .packages("br.com.vinheria.pedidos.controller");
+                .packages("br.com.vinheria.pedidos.controller")
+                .packages("br.com.vinheria.pedidos.infra");
 
         return GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), rc);
     }
