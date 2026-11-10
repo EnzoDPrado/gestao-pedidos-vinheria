@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        maven: 'Maven 3'
+    }
+
     stages {
 
         stage('Checkout') {
@@ -27,10 +31,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Realizando deploy do gestao-pedidos...'
-                // Para o container antigo se estiver rodando
                 sh 'docker stop gestao-pedidos || true'
                 sh 'docker rm gestao-pedidos || true'
-                // Sobe o novo container
                 sh '''
                     docker run -d \
                         --name gestao-pedidos \

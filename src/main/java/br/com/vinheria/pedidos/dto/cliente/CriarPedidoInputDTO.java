@@ -1,4 +1,4 @@
-package br.com.vinheria.pedidos.dto;
+package br.com.vinheria.pedidos.dto.cliente;
 
 import br.com.vinheria.pedidos.entities.Pedido;
 

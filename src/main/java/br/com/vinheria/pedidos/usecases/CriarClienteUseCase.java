@@ -1,6 +1,6 @@
 package br.com.vinheria.pedidos.usecases;
 
-import br.com.vinheria.pedidos.dto.CriarClienteInputDTO;
+import br.com.vinheria.pedidos.dto.cliente.CriarClienteInputDTO;
 import br.com.vinheria.pedidos.entities.Cliente;
 import br.com.vinheria.pedidos.infra.ApiError;
 import br.com.vinheria.pedidos.repository.ClienteRepository;

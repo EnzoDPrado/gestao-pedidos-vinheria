@@ -1,6 +1,6 @@
 package br.com.vinheria.pedidos.controller;
 
-import br.com.vinheria.pedidos.dto.CriarPedidoInputDTO;
+import br.com.vinheria.pedidos.dto.cliente.CriarPedidoInputDTO;
 import br.com.vinheria.pedidos.service.PedidoService;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.*;

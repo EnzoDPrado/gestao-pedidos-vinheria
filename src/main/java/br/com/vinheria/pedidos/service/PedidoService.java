@@ -1,6 +1,6 @@
 package br.com.vinheria.pedidos.service;
 
-import br.com.vinheria.pedidos.dto.CriarPedidoInputDTO;
+import br.com.vinheria.pedidos.dto.cliente.CriarPedidoInputDTO;
 import br.com.vinheria.pedidos.entities.Pedido;
 import br.com.vinheria.pedidos.repository.PedidoRepository;
 import br.com.vinheria.pedidos.usecases.CriarPedidoUseCase;

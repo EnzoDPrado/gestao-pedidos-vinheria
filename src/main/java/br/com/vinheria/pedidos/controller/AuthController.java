@@ -1,16 +1,12 @@
 package br.com.vinheria.pedidos.controller;
 
+import br.com.vinheria.pedidos.dto.login.LoginInputDTO;
+import br.com.vinheria.pedidos.dto.login.LoginResponseDTO;
 import br.com.vinheria.pedidos.infra.ApiError;
 import br.com.vinheria.pedidos.infra.JwtUtil;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
-
-// DTO de entrada do login — usuario e senha
-record LoginInputDTO(String usuario, String senha) {}
-
-// DTO de saida — retorna o token gerado
-record LoginResponseDTO(String token) {}
 
 @Path("auth")
 @Consumes(MediaType.APPLICATION_JSON)
